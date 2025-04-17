@@ -82,3 +82,21 @@
     background-color: var(--bs-primary);
     border-radius: 3px;
   }
+  
+  .favorite-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .favorite-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .favorite-btn.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+  }
+  
+  #favorites-section {
+    min-height: 100px;
+  }

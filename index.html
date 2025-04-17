@@ -6,6 +6,7 @@
     <title>Zen Yoga Library</title>
     <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -44,6 +45,12 @@
             </div>
 
             <div id="pose-grid">
+                <!-- Favorites Section -->
+                <h2 class="category-title mb-4">My Favorites</h2>
+                <div id="favorites-section" class="row">
+                    <!-- Favorite poses will be dynamically added here -->
+                </div>
+
                 <!-- Standing Poses -->
                 <h2 class="category-title mb-4">Standing Poses</h2>
                 <div class="row">
@@ -62,7 +69,12 @@
                                         <li>Steadies breathing</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=mountain-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=mountain-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="mountain-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -82,7 +94,12 @@
                                         <li>Improves balance</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=warrior-i" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=warrior-i" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="warrior-i">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,7 +119,12 @@
                                         <li>Builds endurance</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=warrior-ii" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=warrior-ii" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="warrior-ii">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +148,12 @@
                                         <li>Increases focus</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=tree-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=tree-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="tree-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,7 +173,12 @@
                                         <li>Strengthens legs and core</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=dancer-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=dancer-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="dancer-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -170,7 +202,12 @@
                                         <li>Improves posture</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=cobra-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=cobra-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="cobra-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,7 +227,12 @@
                                         <li>Stretches hips and thighs</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=childs-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=childs-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="childs-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,7 +252,12 @@
                                         <li>Calms nervous system</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=lotus-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=lotus-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="lotus-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,7 +281,12 @@
                                         <li>Enhances focus and concentration</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=headstand" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=headstand" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="headstand">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -254,7 +306,12 @@
                                         <li>Enhances balance and focus</li>
                                     </ul>
                                 </div>
-                                <a href="pose.html?pose=peacock-pose" class="btn btn-primary mt-3">Learn More</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="pose.html?pose=peacock-pose" class="btn btn-primary">Learn More</a>
+                                    <button class="btn btn-outline-warning favorite-btn" data-pose-id="peacock-pose">
+                                        <i class="bi bi-star"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
